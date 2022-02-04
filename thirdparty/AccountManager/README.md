@@ -1,5 +1,11 @@
 # Darkflame Universe Account Manager
 
+THIS FORK INCLUDES LEGO6245'S NAME APPROVAL DASHBOARD (https://github.com/Lego6245)
+
+Alternative instructions: https://gist.github.com/Saymoan/cee72d3e6244a51f70124ac86a2802e9#installing-accountmanager (the git clone needs to be changed)
+
+##########
+
 This is a quick and simple web application intended for account creation and management for a [DLU](https://github.com/DarkflameUniverse/DarkflameServer) instance created by Wincent.
 
 Logo by BlasterBuilder.
@@ -37,9 +43,3 @@ flask run --port 5000
 # or simply
 python app.py
 ```
-
-## Available Endpoints
-
-There are several available endpoints that are useful to users.
-- `/login`: Login as an Admin and create CD keys.
-- `/activate`: Create a new account as a non-admin user. You will require a CD key (which is provided by the admin).

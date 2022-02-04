@@ -395,22 +395,79 @@
             </locations>
         </zone>
     </npc>
-	<npc name="Max - Developer" lot="9749">
-        <equipment>4523, 2517, 11909</equipment>
+        <npc name="Wrynn, The Accursed" lot="4712">
+        <equipment></equipment>
         <phrases>
-            <phrase>Some people know me as "Darwin"; but that's been a while!</phrase>
-            <phrase>Per aspera ad astra!</phrase>
-            <phrase>Oh, hi there!</phrase>
-            <phrase>If you see a certain wizard, say hi to him for me!</phrase>
-            <phrase>Persue your goals, I believe in you!</phrase>
-            <phrase>Something to think about: "I like red shirts. Some people don't, but that's okay. It's for me, not them."</phrase>
-            <phrase>Working as intended</phrase>
-            <phrase>I love cats, little meow meows</phrase>
-			<phrase>It's not perfect, but it works!</phrase>
+            <phrase></phrase>
+            <phrase></phrase>
+            <phrase></phrase>
+            <phrase></phrase>
+            <phrase></phrase>
+            <phrase></phrase>
+            <phrase></phrase>
+            <phrase></phrase>
+            <phrase></phrase>
         </phrases>
-        <zone id="1201">
+        <zone id="1000">
             <locations>
-                <location x="197.709" y="179.335" z="-8.05284" rw="0.544424" rx="0" ry="-0.83881" rz="0" />
+                <location x="-154.813" y="580.961" z="-135.519" rw="0" rx="0" ry="0" rz="0" />
+            </locations>
+        </zone>
+    </npc>
+        <npc name="Wrynn, The Accursed" lot="11982">
+        <equipment></equipment>
+        <phrases>
+            <phrase></phrase>
+            <phrase></phrase>
+            <phrase></phrase>
+            <phrase></phrase>
+            <phrase></phrase>
+            <phrase></phrase>
+            <phrase></phrase>
+            <phrase></phrase>
+            <phrase></phrase>
+        </phrases>
+        <zone id="1200">
+            <locations>
+                <location x="29.453" y="291.077" z="-188.905" rw="0" rx="0" ry="0" rz="0" />
+            </locations>
+        </zone>
+    </npc>
+        <npc name="Del" lot="2281">
+        <equipment>7786, 12711, 14092</equipment>
+        <phrases>
+            <phrase></phrase>
+            <phrase></phrase>
+            <phrase></phrase>
+            <phrase></phrase>
+            <phrase></phrase>
+            <phrase></phrase>
+            <phrase></phrase>
+            <phrase></phrase>
+            <phrase></phrase>
+        </phrases>
+        <zone id="1900">
+            <locations>
+                <location x="61.218" y="1142.018" z="-441.632" rw="0" rx="0" ry="0" rz="0" />
+            </locations>
+        </zone>
+    </npc>
+        <npc name="Moonbeam" lot="1904">
+        <equipment></equipment>
+        <phrases>
+            <phrase></phrase>
+            <phrase></phrase>
+            <phrase></phrase>
+            <phrase></phrase>
+            <phrase></phrase>
+            <phrase></phrase>
+            <phrase></phrase>
+            <phrase></phrase>
+            <phrase></phrase>
+        </phrases>
+        <zone id="2000">
+            <locations>
+                <location x="-473.801" y="171.161" z="1082.166" rw="0" rx="0" ry="0" rz="0" />
             </locations>
         </zone>
     </npc>

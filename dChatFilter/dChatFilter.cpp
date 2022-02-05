@@ -14,8 +14,7 @@
 
 using namespace dChatFilterDCF;
 
-dChatFilter::dChatFilter(const std::string& filepath, bool dontGenerateDCF, int chatFilterGMLevel) {
-	m_FilterGMLevel = chatFilterGMLevel;
+dChatFilter::dChatFilter(const std::string& filepath, bool dontGenerateDCF) {
 	m_DontGenerateDCF = dontGenerateDCF;
 
 	if (!BinaryIO::DoesFileExist(filepath + ".dcf") || m_DontGenerateDCF) {

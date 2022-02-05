@@ -67,6 +67,15 @@ VendorComponent::VendorComponent(Entity* parent) : Component(parent) {
         }
     }
 
+	//Custom code for Max vanity NPC
+	if (parent->GetLOT() == 9749 && Game::server->GetZoneID() == 1201) {
+		m_Inventory.clear();
+		m_Inventory.insert({11909, 0}); //Top hat w frog
+		m_Inventory.insert({7785, 0}); //Flash bulb
+		m_Inventory.insert({12764, 0}); //Big fountain soda
+		m_Inventory.insert({12241, 0}); //Hot cocoa (from fb)
+	}
+
 	//CALDERA MAR NPC - Wrynn, The Accursed (Venture Explorer)(Normal Stromling)
 	if (parent->GetLOT() == 4712 && Game::server->GetZoneID() == 1000) {
 		m_Inventory.clear();

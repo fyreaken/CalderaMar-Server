@@ -398,15 +398,6 @@
         <npc name="Wrynn, The Accursed" lot="4712">
         <equipment></equipment>
         <phrases>
-            <phrase></phrase>
-            <phrase></phrase>
-            <phrase></phrase>
-            <phrase></phrase>
-            <phrase></phrase>
-            <phrase></phrase>
-            <phrase></phrase>
-            <phrase></phrase>
-            <phrase></phrase>
         </phrases>
         <zone id="1000">
             <locations>
@@ -417,15 +408,6 @@
         <npc name="Wrynn, The Accursed" lot="11982">
         <equipment></equipment>
         <phrases>
-            <phrase></phrase>
-            <phrase></phrase>
-            <phrase></phrase>
-            <phrase></phrase>
-            <phrase></phrase>
-            <phrase></phrase>
-            <phrase></phrase>
-            <phrase></phrase>
-            <phrase></phrase>
         </phrases>
         <zone id="1200">
             <locations>
@@ -436,15 +418,6 @@
         <npc name="Del" lot="2281">
         <equipment>7786, 12711, 14092</equipment>
         <phrases>
-            <phrase></phrase>
-            <phrase></phrase>
-            <phrase></phrase>
-            <phrase></phrase>
-            <phrase></phrase>
-            <phrase></phrase>
-            <phrase></phrase>
-            <phrase></phrase>
-            <phrase></phrase>
         </phrases>
         <zone id="1900">
             <locations>
@@ -455,15 +428,6 @@
         <npc name="Moonbeam" lot="1904">
         <equipment></equipment>
         <phrases>
-            <phrase></phrase>
-            <phrase></phrase>
-            <phrase></phrase>
-            <phrase></phrase>
-            <phrase></phrase>
-            <phrase></phrase>
-            <phrase></phrase>
-            <phrase></phrase>
-            <phrase></phrase>
         </phrases>
         <zone id="2000">
             <locations>

@@ -104,44 +104,47 @@ void dChatFilter::ExportWordlistToDCF(const std::string& filepath) {
 }
 
 bool dChatFilter::IsSentenceOkay(const std::string& message, int gmLevel) {
-	if (gmLevel > GAME_MASTER_LEVEL_FORUM_MODERATOR) return true; //If anything but a forum mod, return true.
-	if (message.empty()) return true;
+    if (gmLevel > GAME_MASTER_LEVEL_FORUM_MODERATOR)
+        return true; //If anything but a forum mod, return true.
+    if (message.empty())
+        return true;
 
-	std::stringstream sMessage(message);
-	std::string segment;
-	std::regex reg("(!*|\\?*|\\;*|\\.*|\\,*)");
+    std::stringstream sMessage(message);
+    std::string segment;
+    std::regex reg("(!*|\\?*|\\;*|\\.*|\\,*)");
 
-	while (std::getline(sMessage, segment, ' ')) {
-		std::transform(segment.begin(), segment.end(), segment.begin(), ::tolower); //Transform to lowercase
-		segment = std::regex_replace(segment, reg, "");
+    while (std::getline(sMessage, segment, ' ')) {
+        std::transform(segment.begin(), segment.end(), segment.begin(), ::tolower); //Transform to lowercase
+        segment = std::regex_replace(segment, reg, "");
 
-		size_t hash = CalculateHash(segment);
+        size_t hash = CalculateHash(segment);
 
-		if (std::find(m_UserUnapprovedWordCache.begin(), m_UserUnapprovedWordCache.end(), hash) != m_UserUnapprovedWordCache.end()) {
-			return false; // found word that isn't ok, just deny this code works for both white and black list
-		}
+        if (std::find(m_UserUnapprovedWordCache.begin(), m_UserUnapprovedWordCache.end(), hash) != m_UserUnapprovedWordCache.end()) {
+            return false; // found word that isn't ok, just deny this code works for both white and black list
+        }
 
-		if (!IsInWordlist(hash)) {
-			if (m_UseWhitelist) {
-				m_UserUnapprovedWordCache.push_back(hash);
-				return false;
-			}
-		} else {
-			if (!m_UseWhitelist) {
-				m_UserUnapprovedWordCache.push_back(hash);
-				return false;
-			}
-		}
-	}
+        if (!IsInWordlist(hash)) {
+            if (m_UseWhitelist) {
+                m_UserUnapprovedWordCache.push_back(hash);
+                return false;
+            }
+        } else {
+            if (!m_UseWhitelist) {
+                m_UserUnapprovedWordCache.push_back(hash);
+                return false;
+            }
+        }
+    }
 
-size_t dChatFilter::CalculateHash(const std::string& word) {
-	std::hash<std::string> hash{};
+    size_t dChatFilter::CalculateHash(const std::string& word) {
+        std::hash<std::string> hash{};
 
-	size_t value = hash(word);
+        size_t value = hash(word);
 
-	return value;
-}
+        return value;
+    }
 
-bool dChatFilter::IsInWordlist(size_t word) {
-	return std::find(m_Words.begin(), m_Words.end(), word) != m_Words.end();
+    bool dChatFilter::IsInWordlist(size_t word) {
+        return std::find(m_Words.begin(), m_Words.end(), word) != m_Words.end();
+    }
 }

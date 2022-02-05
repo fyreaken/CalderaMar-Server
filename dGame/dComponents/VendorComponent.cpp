@@ -67,17 +67,18 @@ VendorComponent::VendorComponent(Entity* parent) : Component(parent) {
         }
     }
 
-	//Custom code for Max vanity NPC
-	if (parent->GetLOT() == 9749 && Game::server->GetZoneID() == 1201) {
+	//CALDERA MAR NPC - Wrynn - The Accursed (Venture Explorer)(Normal Stromling)
+	if (parent->GetLOT() == 4712 && Game::server->GetZoneID() == 1000) {
 		m_Inventory.clear();
-		m_Inventory.insert({11909, 0}); //Top hat w frog
-		m_Inventory.insert({7785, 0}); //Flash bulb
-		m_Inventory.insert({12764, 0}); //Big fountain soda
-		m_Inventory.insert({12241, 0}); //Hot cocoa (from fb)
 	}
 
-	//CALDERA MAR NPC - Wrynn, The Accursed (Venture Explorer)(Normal Stromling)
-	if (parent->GetLOT() == 4712 && Game::server->GetZoneID() == 1000) {
+	//CALDERA MAR NPC - Wrynn - The Accursed (Nimbus Station)(Stromling Invader)
+	if (parent->GetLOT() == 4712 && Game::server->GetZoneID() == 1200) {
+		m_Inventory.clear();
+	}
+
+	//CALDERA MAR NPC - Platinum (Nimbus Station)(Fermie LaBoosh)
+	if (parent->GetLOT() == 1867 && Game::server->GetZoneID() == 1000) {
 		m_Inventory.clear();
 		m_Inventory.insert({15966, 0}); //Maelstrom Spear
 		m_Inventory.insert({15987, 0}); //Maelstrom Axe
@@ -101,8 +102,19 @@ VendorComponent::VendorComponent(Entity* parent) : Component(parent) {
 		m_Inventory.insert({16708, 0}); //Lightning Ninjago Rocket Part 3
 	}
 
-	//CALDERA MAR NPC - Wrynn, The Accursed (Nimbus Station)(Stromling Invader)
-	if (parent->GetLOT() == 11982 && Game::server->GetZoneID() == 1200) {
+	//CALDERA MAR NPC - Nat (Ninjago Monastery Caves)()
+	if (parent->GetLOT() == 13799 && Game::server->GetZoneID() == 2000) {
+		m_Inventory.clear();
+		m_Inventory.insert({14140, 0}); //Earth Armor Helmet
+		m_Inventory.insert({14135, 0}); //Earth Armor Shoulderpads
+		m_Inventory.insert({14170, 0}); //Earth Armor Shirt
+		m_Inventory.insert({14171, 0}); //Earth Armor Pants
+		m_Inventory.insert({14090, 0}); //Earth Armor Weapon
+		m_Inventory.insert({14548, 0}); //Earth Armor Weapon
+	}
+
+	//CALDERA MAR NPC - Platinum (Nimbus Station)(Fermie LaBoosh)
+	if (parent->GetLOT() == 1867 && Game::server->GetZoneID() == 1200) {
 		m_Inventory.clear();
 		m_Inventory.insert({11909, 0}); //Ribbit's Top Hat
 		m_Inventory.insert({12512, 0}); //Cool Hat
@@ -126,12 +138,6 @@ VendorComponent::VendorComponent(Entity* parent) : Component(parent) {
 		m_Inventory.insert({16127, 0}); //Pink Hakama Pants
 		m_Inventory.insert({16092, 0}); //Black Silk Kimono
 		m_Inventory.insert({16125, 0}); //Black Hakama Pants
-		m_Inventory.insert({14140, 0}); //Earth Armor Helmet
-		m_Inventory.insert({14135, 0}); //Earth Armor Shoulderpads
-		m_Inventory.insert({14170, 0}); //Earth Armor Shirt
-		m_Inventory.insert({14171, 0}); //Earth Armor Pants
-		m_Inventory.insert({14090, 0}); //Earth Armor Weapon
-		m_Inventory.insert({14548, 0}); //Earth Armor Weapon
 		m_Inventory.insert({14095, 0}); //Racemaster
 		m_Inventory.insert({14099, 0}); //Racemaster
 		m_Inventory.insert({14096, 0}); //Race Ace
@@ -163,8 +169,8 @@ VendorComponent::VendorComponent(Entity* parent) : Component(parent) {
 		m_Inventory.insert({16708, 0}); //Lightning Ninjago Rocket Part 3
 	}
 
-	//CALDERA MAR NPC - Del (Nexus Tower)(Minifig - Simon Soupspoon)
-	if (parent->GetLOT() == 2281 && Game::server->GetZoneID() == 1900) {
+	//CALDERA MAR NPC - Del (Nexus Tower)(Fermie LaBoosh)
+	if (parent->GetLOT() == 1867 && Game::server->GetZoneID() == 1900) {
 		m_Inventory.clear();
 		m_Inventory.insert({9869, 0}); //Vampire Nexus Force Cape
 		m_Inventory.insert({9870, 0}); //Vampire Blue Cape
@@ -177,7 +183,7 @@ VendorComponent::VendorComponent(Entity* parent) : Component(parent) {
 		m_Inventory.insert({12100, 0}); //Ice Backpack
 		m_Inventory.insert({14106, 0}); //Stromling Shirt
 		m_Inventory.insert({14105, 0}); //Spiderling Shirt
-		m_Inventory.insert({14014, 0}); //Survival Mech Shirt
+		m_Inventory.insert({14104, 0}); //Survival Mech Shirt
 		m_Inventory.insert({14118, 0}); //Murgle Blotch Shirt
 		m_Inventory.insert({14117, 0}); //Kinga Hurl Shirt
 		m_Inventory.insert({14116, 0}); //4 Riders Shirt
@@ -201,8 +207,8 @@ VendorComponent::VendorComponent(Entity* parent) : Component(parent) {
 		m_Inventory.insert({16123, 0}); //Murasaki Hakama
 	}
 
-	//CALDERA MAR NPC - Moonbeam (Ninjago Monastery)(Glow Bug)
-	if (parent->GetLOT() == 1904 && Game::server->GetZoneID() == 2000) {
+	//CALDERA MAR NPC - Valve (Nexus Tower)(Bruno Underbite)
+	if (parent->GetLOT() == 3921 && Game::server->GetZoneID() == 1900) {
 		m_Inventory.clear();
 		m_Inventory.insert({10698, 0}); //Bradford Rant Book
 		m_Inventory.insert({10520, 0}); //Beta Tester Book
@@ -267,6 +273,11 @@ VendorComponent::VendorComponent(Entity* parent) : Component(parent) {
 		m_Inventory.insert({16677, 0}); //Ninjago Fire Car
 		m_Inventory.insert({16678, 0}); //Ninjago Fire Car
 		m_Inventory.insert({16679, 0}); //Ninjago Fire Car
+	}
+
+	//CALDERA MAR NPC - Moonbeam (Ninjago Monastery)(Glow Bug)
+	if (parent->GetLOT() == 1904 && Game::server->GetZoneID() == 2000) {
+		m_Inventory.clear();
 	}
 }
 

@@ -395,7 +395,7 @@
             </locations>
         </zone>
     </npc>
-        <npc name="Wrynn, The Accursed" lot="4712">
+        <npc name="Wrynn - The Accursed" lot="4712">
         <equipment></equipment>
         <phrases>
         </phrases>
@@ -405,18 +405,18 @@
             </locations>
         </zone>
     </npc>
-        <npc name="Wrynn, The Accursed" lot="11982">
+        <npc name="Wrynn - The Accursed" lot="4712">
         <equipment></equipment>
         <phrases>
         </phrases>
         <zone id="1200">
             <locations>
-                <location x="29.453" y="291.077" z="-188.905" rw="0" rx="0" ry="0" rz="0" />
+                <location x="68.474" y="291.630" z="-139.265" rw="0" rx="0" ry="0" rz="0" />
             </locations>
         </zone>
     </npc>
-        <npc name="Del" lot="2281">
-        <equipment>7786, 12711, 14092</equipment>
+        <npc name="Del - Otherworldly Traveller" lot="1867">
+        <equipment>7786, 4263, 14092, 13586</equipment>
         <phrases>
         </phrases>
         <zone id="1900">
@@ -425,7 +425,47 @@
             </locations>
         </zone>
     </npc>
-        <npc name="Moonbeam" lot="1904">
+        <npc name="Platinum - Lightbringer" lot="1867">
+        <equipment></equipment>
+        <phrases>
+        </phrases>
+        <zone id="1200">
+            <locations>
+                <location x="-352.5" y="287.6" z="217.7" rw="-0.095" rx="0.0" ry="0.995" rz="0.0" />
+            </locations>
+        </zone>
+    </npc>
+        <npc name="Platinum - Lightbringer" lot="1867">
+        <equipment></equipment>
+        <phrases>
+        </phrases>
+        <zone id="1000">
+            <locations>
+                <location x="-131.907" y="580.961" z="30.999" rw="0" rx="0" ry="0" rz="0" />
+            </locations>
+        </zone>
+    </npc>
+        <npc name="Nat - Spinjitsu Student" lot="13799">
+        <equipment>15936, 16067, 16102</equipment>
+        <phrases>
+        </phrases>
+        <zone id="2000">
+            <locations>
+                <location x="-534.397" y="95.721" z="-759.993" rw="0" rx="0" ry="0" rz="0" />
+            </locations>
+        </zone>
+    </npc>
+        <npc name="Valve - Nexus Torchbearer" lot="3921">
+        <equipment>13916, 14106, 14092</equipment>
+        <phrases>
+        </phrases>
+        <zone id="1900">
+            <locations>
+                <location x="-73.548" y="1151.570" z="-262.001" rw="0" rx="0" ry="0" rz="0" />
+            </locations>
+        </zone>
+    </npc>
+        <npc name="Moonbeam - Playful Glowbug" lot="1904">
         <equipment></equipment>
         <phrases>
         </phrases>

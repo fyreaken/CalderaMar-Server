@@ -51,7 +51,7 @@
         </zone>
     </npc>
         <npc name="Platinum - Lightbringer" lot="1867">
-        <equipment></equipment>
+        <equipment>6198, 4343, 8539, 14092, 13584</equipment>
         <phrases>
         </phrases>
         <zone id="1200">
@@ -61,7 +61,7 @@
         </zone>
     </npc>
         <npc name="Platinum - Lightbringer" lot="1867">
-        <equipment></equipment>
+        <equipment>6198, 4343, 8539, 14092, 13584</equipment>
         <phrases>
         </phrases>
         <zone id="1000">

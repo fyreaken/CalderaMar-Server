@@ -36,7 +36,7 @@
         </phrases>
         <zone id="1200">
             <locations>
-                <location x="68.474" y="291.630" z="-139.265" rw="0" rx="0" ry="0" rz="0" />
+                <location x="68.0879" y="291.62915" z="-138.58461" rw="0.76204693" rx="0" ry="-0.6475218" rz="0" />
             </locations>
         </zone>
     </npc>
@@ -56,7 +56,7 @@
         </phrases>
         <zone id="1200">
             <locations>
-                <location x="-352.5" y="287.6" z="217.7" rw="0" rx="0" ry="0" rz="0" />
+                <location x="-353.19757" y="287.65414" z="216.34798" rw="0.106542826" rx="0" ry="0.9943081" rz="0" />
             </locations>
         </zone>
     </npc>
@@ -66,7 +66,7 @@
         </phrases>
         <zone id="1000">
             <locations>
-            	<location x="-131.907" y="580.961" z="30.999" rw="0" rx="0" ry="0" rz="0" />
+            	<location x="-131.63197" y="580.9612" z="31.013863" rw="0.55181724" rx="0" ry="-0.83396506" rz="0" />
             </locations>
         </zone>
     </npc>
@@ -76,7 +76,7 @@
         </phrases>
         <zone id="2000">
             <locations>
-                <location x="-534.397" y="95.721" z="-759.993" rw="0" rx="0" ry="0" rz="0" />
+                <location x="-530.002" y="95.281" z="-753.095" rw="0.9528789" rx="0" ry="0.303351" rz="0" />
             </locations>
         </zone>
     </npc>
@@ -86,7 +86,7 @@
         </phrases>
         <zone id="1900">
             <locations>
-                <location x="-73.548" y="1151.570" z="-262.001" rw="0" rx="0" ry="0" rz="0" />
+                <location x="-73.548" y="1151.570" z="-262.001" rw="0.4310044" rx="0" ry="0.9023498" rz="0" />
             </locations>
         </zone>
     </npc>

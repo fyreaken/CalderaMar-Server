@@ -147,10 +147,7 @@ VendorComponent::VendorComponent(Entity* parent) : Component(parent) {
 		m_Inventory.insert({14121, 0}); //Nexus Force Shield MKI
 		m_Inventory.insert({14120, 0}); //Nexus Force Shield MKII
 		m_Inventory.insert({14119, 0}); //Nexus Force Shield MKIII
-		m_Inventory.insert({14721, 0}); //Nya's Golden Daggers
-		m_Inventory.insert({14824, 0}); //Double Hammers
 		m_Inventory.insert({16898, 0}); //Crocodile Hatchling
-		m_Inventory.insert({16648, 0}); //Kawaii Umbrella
 		m_Inventory.insert({15979, 0}); //Duck Rocket
 		m_Inventory.insert({15978, 0}); //Pencil Rocket
 		m_Inventory.insert({15977, 0}); //Shark Rocket
@@ -178,9 +175,9 @@ VendorComponent::VendorComponent(Entity* parent) : Component(parent) {
 		m_Inventory.insert({9872, 0}); //Vampire Assembly Cape
 		m_Inventory.insert({9873, 0}); //Vampire Venture League Cape
 		m_Inventory.insert({9874, 0}); //Vampire Paradox Cape
-		m_Inventory.insert({12097, 0}); //Brown Backpack
-		m_Inventory.insert({12099, 0}); //Tesla Backpack
-		m_Inventory.insert({12100, 0}); //Ice Backpack
+		m_Inventory.insert({14721, 0}); //Nya's Golden Daggers
+		m_Inventory.insert({14824, 0}); //Double Hammers
+		m_Inventory.insert({16648, 0}); //Kawaii Umbrella
 		m_Inventory.insert({14106, 0}); //Stromling Shirt
 		m_Inventory.insert({14105, 0}); //Spiderling Shirt
 		m_Inventory.insert({14104, 0}); //Survival Mech Shirt
@@ -193,17 +190,6 @@ VendorComponent::VendorComponent(Entity* parent) : Component(parent) {
 		m_Inventory.insert({14103, 0}); //Paparazzi Shirt
 		m_Inventory.insert({14102, 0}); //Photojournalist Shirt
 		m_Inventory.insert({14101, 0}); //Bricksel Adams Shirt
-		m_Inventory.insert({12685, 0}); //Assembly Hawaiian Shirt
-		m_Inventory.insert({12694, 0}); //Sentinel Hawaiian Shirt
-		m_Inventory.insert({12703, 0}); //Venture Hawaiian Shirt
-		m_Inventory.insert({6196, 0}); //Sentinel Friend T-Shirt
-		m_Inventory.insert({12750, 0}); //Assembly Friend T-Shirt
-		m_Inventory.insert({12751, 0}); //Paradox Friend T-Shirt
-		m_Inventory.insert({12752, 0}); //Venture Friend T-Shirt
-		m_Inventory.insert({10126, 0}); //Bacon and Eggs Shirt
-		m_Inventory.insert({12684, 0}); //Gorilla Shirt
-		m_Inventory.insert({12717, 0}); //Mummy Shirt
-		m_Inventory.insert({12795, 0}); //Mummy Pants
 		m_Inventory.insert({16123, 0}); //Murasaki Hakama
 	}
 

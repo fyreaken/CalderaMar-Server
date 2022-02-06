@@ -100,25 +100,6 @@
             </locations>
         </zone>
     </npc>
-        <npc name="Max - Developer" lot="9749">
-        <equipment>4523, 2517, 11909</equipment>
-        <phrases>
-            <phrase>Some people know me as "Darwin"; but that's been a while!</phrase>
-            <phrase>Per aspera ad astra!</phrase>
-            <phrase>Oh, hi there!</phrase>
-            <phrase>If you see a certain wizard, say hi to him for me!</phrase>
-            <phrase>Persue your goals, I believe in you!</phrase>
-            <phrase>Something to think about: "I like red shirts. Some people don't, but that's okay. It's for me, not them."</phrase>
-            <phrase>Working as intended</phrase>
-            <phrase>I love cats, little meow meows</phrase>
-            <phrase>It's not perfect, but it works!</phrase>
-        </phrases>
-        <zone id="1201">
-            <locations>
-                <location x="197.709" y="179.335" z="-8.05284" rw="0.544424" rx="0" ry="-0.83881" rz="0" />
-            </locations>
-        </zone>
-    </npc>
     <party zone="1200" chance="0.0">
         <locations>
             <location x="-24.3963" y="291.542" z="-117.871" rw="0.480946" rx="0" ry="0.87675" rz="0" />

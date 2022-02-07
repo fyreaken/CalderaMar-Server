@@ -100,10 +100,8 @@ int main(int argc, char** argv) {
 	// Triggers the shutdown sequence at application exit
 	std::atexit(WorldShutdownSequence);
 	
-	signal(SIGINT, [](int)
-	{
-		WorldShutdownSequence();
-	});
+	signal(SIGINT, [](int){ WorldShutdownSequence(); });
+	signal(SIGTERM, [](int){ WorldShutdownSequence(); });
 
 	int zoneID = 1000;
 	int cloneID = 0;
@@ -316,6 +314,7 @@ int main(int argc, char** argv) {
 			framesSinceMasterDisconnect++;
 
 			if (framesSinceMasterDisconnect >= 30) {
+				Game::logger->Log("WorldServer", "Game loop running but no connection to master for 30 frames, shutting down");
 				worldShutdownSequenceStarted = true;
 			}
 		}

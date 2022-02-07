@@ -20,7 +20,7 @@
             </locations>
         </zone>
     </npc>
-        <npc name="Caldera Mar Test NPC - test test test test test test test test test test test test test test" lot="3921">
+        <npc name="Caldera Mar Test NPC - test test test test" lot="3921">
         <equipment>14104, 2524</equipment>
         <phrases>
             <phrase>cmerw[acowipaejio;fawjioefasdl;kfjm;</phrase>

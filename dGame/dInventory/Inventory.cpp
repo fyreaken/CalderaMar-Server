@@ -3,15 +3,7 @@
 #include "Game.h"
 #include "Item.h"
 
-std::vector<LOT> Inventory::m_GameMasterRestrictedItems = {
-		1727, // GM Only - JetPack
-		2243, // GM Only - Hammer of Doom
-		3293, // GM Only - Flamethrower
-		3735, // GM Only - Large Jetpack
-		5873, // GM Only - Winged Helm of Speed
-		6407, // Gm Only - Hat of Pwnage
-		14442 // The jamesster jetpack
-};
+std::vector<LOT> Inventory::m_GameMasterRestrictedItems = {};
 
 Inventory::Inventory(const eInventoryType type, const uint32_t size, const std::vector<Item*>& items, InventoryComponent* component)
 {

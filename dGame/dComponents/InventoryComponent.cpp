@@ -263,7 +263,7 @@ void InventoryComponent::AddItem(
 			switch (sourceType)
 			{
 			case 0:
-				player->SendMail(LWOOBJID_EMPTY, "Darkflame Universe", "Lost Reward", "You received an item and didn&apos;t have room for it.", lot, size);
+				player->SendMail(LWOOBJID_EMPTY, "Caldera Mar", "Lost Reward", "You received an item and didn&apos;t have room for it.", lot, size);
 				break;
 
 			case 1:

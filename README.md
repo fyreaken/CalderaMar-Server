@@ -12,5 +12,4 @@ Mods the Caldera Mar servers use:
 - NPC Vendors selling unreleased items.
 - Modified locale.xml.
 
-Look to [Darkflame Universe](https://github.com/DarkflameUniverse/DarkflameServer) for installation instructions, and for setting
-up the server on Google Cloud: [here](https://github.com/MasterEric/awesome-lego-universe/blob/master/server-setup/google-cloud-setup.md)
+Look to [Darkflame Universe](https://github.com/DarkflameUniverse/DarkflameServer) for installation instructions, and for setting up the server on Google Cloud: [here](https://github.com/MasterEric/awesome-lego-universe/blob/master/server-setup/google-cloud-setup.md)

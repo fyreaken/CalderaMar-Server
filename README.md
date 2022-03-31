@@ -9,6 +9,7 @@ Modified code on this fork adds the following functionality:
 - Ability for gmlevel 0 to use /playanim.
 
 Caldera Mar uses this fork for its Lego Universe Server.
+
 The modifications above are only applied to the server and do not require a user install a patch to their client.
 
 The Caldera Mar LU server also uses these mods:

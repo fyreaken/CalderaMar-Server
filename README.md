@@ -11,5 +11,6 @@ Mods the Caldera Mar servers use:
 - Disabled Item Linking.
 - NPC Vendors selling unreleased items.
 - Modified locale.xml.
+- Ability for gmlevel 0 to use /playanim.
 
 Look to [Darkflame Universe](https://github.com/DarkflameUniverse/DarkflameServer) for installation instructions, and for setting up the server on Google Cloud: [guide](https://github.com/MasterEric/awesome-lego-universe/blob/master/server-setup/google-cloud-setup.md)

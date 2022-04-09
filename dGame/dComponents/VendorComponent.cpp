@@ -88,32 +88,7 @@ VendorComponent::VendorComponent(Entity* parent) : Component(parent) {
 		m_Inventory.insert({6407, 0}); //Hat of Pwnage
 	}
 
-	//CALDERA MAR NPC - Platinum (Nimbus Station)(Fermie LaBoosh)
-	if (parent->GetLOT() == 1867 && Game::server->GetZoneID() == 1000) {
-		m_Inventory.clear();
-		m_Inventory.insert({15966, 0}); //Maelstrom Spear
-		m_Inventory.insert({15987, 0}); //Maelstrom Axe
-		m_Inventory.insert({15968, 0}); //Maelstrom Dagger
-		m_Inventory.insert({16898, 0}); //Crocodile Hatchling
-		m_Inventory.insert({15979, 0}); //Duck Rocket
-		m_Inventory.insert({15978, 0}); //Pencil Rocket
-		m_Inventory.insert({15977, 0}); //Shark Rocket
-		m_Inventory.insert({10458, 0}); //Nexus Force Rocket Pack
-		m_Inventory.insert({16700, 0}); //Earth Ninjago Rocket Part 1
-		m_Inventory.insert({16701, 0}); //Earth Ninjago Rocket Part 2
-		m_Inventory.insert({16702, 0}); //Earth Ninjago Rocket Part 3
-		m_Inventory.insert({16697, 0}); //Ice Ninjago Rocket Part 1
-		m_Inventory.insert({16698, 0}); //Ice Ninjago Rocket Part 2
-		m_Inventory.insert({16699, 0}); //Ice Ninjago Rocket Part 3
-		m_Inventory.insert({16703, 0}); //Fire Ninjago Rocket Part 1
-		m_Inventory.insert({16704, 0}); //Fire Ninjago Rocket Part 2
-		m_Inventory.insert({16705, 0}); //Fire Ninjago Rocket Part 3
-		m_Inventory.insert({16706, 0}); //Lightning Ninjago Rocket Part 1
-		m_Inventory.insert({16707, 0}); //Lightning Ninjago Rocket Part 2
-		m_Inventory.insert({16708, 0}); //Lightning Ninjago Rocket Part 3
-	}
-
-	//CALDERA MAR NPC - Nat (Ninjago Monastery Caves)()
+	//CALDERA MAR NPC - Izumi (Ninjago Monastery Caves)()
 	if (parent->GetLOT() == 13799 && Game::server->GetZoneID() == 2000) {
 		m_Inventory.clear();
 		m_Inventory.insert({14140, 0}); //Earth Armor Helmet
@@ -122,25 +97,7 @@ VendorComponent::VendorComponent(Entity* parent) : Component(parent) {
 		m_Inventory.insert({14171, 0}); //Earth Armor Pants
 		m_Inventory.insert({14090, 0}); //Earth Armor Weapon
 		m_Inventory.insert({14548, 0}); //Earth Armor Weapon
-	}
-
-	//CALDERA MAR NPC - Platinum (Nimbus Station)(Fermie LaBoosh)
-	if (parent->GetLOT() == 1867 && Game::server->GetZoneID() == 1200) {
-		m_Inventory.clear();
-		m_Inventory.insert({11909, 0}); //Ribbit's Top Hat
-		m_Inventory.insert({12512, 0}); //Cool Hat
-		m_Inventory.insert({15918, 0}); //Athlete's Shade
-		m_Inventory.insert({7791, 0}); //Blue Sun Headdress
-		m_Inventory.insert({15966, 0}); //Maelstrom Spear
-		m_Inventory.insert({15987, 0}); //Maelstrom Axe
-		m_Inventory.insert({15968, 0}); //Maelstrom Dagger
-		m_Inventory.insert({11286, 0}); //Dino-Pack
-		m_Inventory.insert({11287, 0}); //Grey Dino-Pack
-		m_Inventory.insert({9883, 0}); //Tan Cat Backpack
-		m_Inventory.insert({10295, 0}); //White Cat Backpack
-		m_Inventory.insert({10296, 0}); //Black Cat Backpack
-		m_Inventory.insert({10313, 0}); //Brown Owl Backpack
-		m_Inventory.insert({11207, 0}); //White Owl Backpack
+		m_Inventory.insert({16648, 0}); //Kawaii Umbrella
 		m_Inventory.insert({16089, 0}); //White Silk Kimono
 		m_Inventory.insert({16129, 0}); //Grey Hakama Pants
 		m_Inventory.insert({16090, 0}); //Red Silk Kimono
@@ -149,6 +106,18 @@ VendorComponent::VendorComponent(Entity* parent) : Component(parent) {
 		m_Inventory.insert({16127, 0}); //Pink Hakama Pants
 		m_Inventory.insert({16092, 0}); //Black Silk Kimono
 		m_Inventory.insert({16125, 0}); //Black Hakama Pants
+		m_Inventory.insert({14721, 0}); //Nya's Golden Daggers
+		m_Inventory.insert({14824, 0}); //Double Hammers
+	}
+
+	//CALDERA MAR NPC - Del (Nexus Tower)
+	if (parent->GetLOT() == 1867 && Game::server->GetZoneID() == 1900) {
+		m_Inventory.clear();
+		m_Inventory.insert({7791, 0}); //Blue Sun Headdress
+		m_Inventory.insert({15966, 0}); //Maelstrom Spear
+		m_Inventory.insert({15987, 0}); //Maelstrom Axe
+		m_Inventory.insert({15968, 0}); //Maelstrom Dagger
+		m_Inventory.insert({12512, 0}); //Cool Hat
 		m_Inventory.insert({14095, 0}); //Racemaster
 		m_Inventory.insert({14099, 0}); //Racemaster
 		m_Inventory.insert({14096, 0}); //Race Ace
@@ -158,11 +127,30 @@ VendorComponent::VendorComponent(Entity* parent) : Component(parent) {
 		m_Inventory.insert({14121, 0}); //Nexus Force Shield MKI
 		m_Inventory.insert({14120, 0}); //Nexus Force Shield MKII
 		m_Inventory.insert({14119, 0}); //Nexus Force Shield MKIII
-		m_Inventory.insert({16898, 0}); //Crocodile Hatchling
+		m_Inventory.insert({14802, 0}); //Wolf Head
+		m_Inventory.insert({13740, 0}); //Stromling Disguise
+		m_Inventory.insert({13741, 0}); //Dragon Disguise
+		m_Inventory.insert({13742, 0}); //Ronin Disguise
+		m_Inventory.insert({9869, 0}); //Vampire Nexus Force Cape
+		m_Inventory.insert({9870, 0}); //Vampire Blue Cape
+		m_Inventory.insert({9871, 0}); //Vampire Sentinels Cape
+		m_Inventory.insert({9872, 0}); //Vampire Assembly Cape
+		m_Inventory.insert({9873, 0}); //Vampire Venture League Cape
+		m_Inventory.insert({9874, 0}); //Vampire Paradox Cape
+		m_Inventory.insert({14106, 0}); //Stromling Shirt
+		m_Inventory.insert({14105, 0}); //Spiderling Shirt
+		m_Inventory.insert({14104, 0}); //Survival Mech Shirt
+		m_Inventory.insert({14118, 0}); //Murgle Blotch Shirt
+		m_Inventory.insert({14117, 0}); //Kinga Hurl Shirt
+		m_Inventory.insert({14116, 0}); //4 Riders Shirt
+		m_Inventory.insert({14103, 0}); //Paparazzi Shirt
+		m_Inventory.insert({14102, 0}); //Photojournalist Shirt
+		m_Inventory.insert({14101, 0}); //Bricksel Adams Shirt
+		m_Inventory.insert({15918, 0}); //Athlete's Shade
+		m_Inventory.insert({16123, 0}); //Murasaki Hakama
 		m_Inventory.insert({15979, 0}); //Duck Rocket
 		m_Inventory.insert({15978, 0}); //Pencil Rocket
 		m_Inventory.insert({15977, 0}); //Shark Rocket
-		m_Inventory.insert({10458, 0}); //Nexus Force Rocket Pack
 		m_Inventory.insert({16700, 0}); //Earth Ninjago Rocket Part 1
 		m_Inventory.insert({16701, 0}); //Earth Ninjago Rocket Part 2
 		m_Inventory.insert({16702, 0}); //Earth Ninjago Rocket Part 3
@@ -177,45 +165,9 @@ VendorComponent::VendorComponent(Entity* parent) : Component(parent) {
 		m_Inventory.insert({16708, 0}); //Lightning Ninjago Rocket Part 3
 	}
 
-	//CALDERA MAR NPC - Del (Nexus Tower)(Fermie LaBoosh)
-	if (parent->GetLOT() == 1867 && Game::server->GetZoneID() == 1900) {
-		m_Inventory.clear();
-		m_Inventory.insert({9869, 0}); //Vampire Nexus Force Cape
-		m_Inventory.insert({9870, 0}); //Vampire Blue Cape
-		m_Inventory.insert({9871, 0}); //Vampire Sentinels Cape
-		m_Inventory.insert({9872, 0}); //Vampire Assembly Cape
-		m_Inventory.insert({9873, 0}); //Vampire Venture League Cape
-		m_Inventory.insert({9874, 0}); //Vampire Paradox Cape
-		m_Inventory.insert({14721, 0}); //Nya's Golden Daggers
-		m_Inventory.insert({14824, 0}); //Double Hammers
-		m_Inventory.insert({16648, 0}); //Kawaii Umbrella
-		m_Inventory.insert({14106, 0}); //Stromling Shirt
-		m_Inventory.insert({14105, 0}); //Spiderling Shirt
-		m_Inventory.insert({14104, 0}); //Survival Mech Shirt
-		m_Inventory.insert({14118, 0}); //Murgle Blotch Shirt
-		m_Inventory.insert({14117, 0}); //Kinga Hurl Shirt
-		m_Inventory.insert({14116, 0}); //4 Riders Shirt
-		m_Inventory.insert({14115, 0}); //Peg-Leg's Shirt
-		m_Inventory.insert({14114, 0}); //One-Eye's Shirt
-		m_Inventory.insert({14113, 0}); //Skyme's Shirt
-		m_Inventory.insert({14103, 0}); //Paparazzi Shirt
-		m_Inventory.insert({14102, 0}); //Photojournalist Shirt
-		m_Inventory.insert({14101, 0}); //Bricksel Adams Shirt
-		m_Inventory.insert({16123, 0}); //Murasaki Hakama
-	}
-
-	//CALDERA MAR NPC - Valve (Nexus Tower)(Bruno Underbite)
+	//CALDERA MAR NPC - Valve (Nexus Tower)
 	if (parent->GetLOT() == 3921 && Game::server->GetZoneID() == 1900) {
 		m_Inventory.clear();
-		m_Inventory.insert({10698, 0}); //Bradford Rant Book
-		m_Inventory.insert({10520, 0}); //Beta Tester Book
-		m_Inventory.insert({12220, 0}); //Pod Captain 1 Pack
-		m_Inventory.insert({12221, 0}); //Pod Captain 2 Pack
-		m_Inventory.insert({12222, 0}); //Pod Captain 3 Pack
-		m_Inventory.insert({12223, 0}); //Pod Captain 4 Pack
-		m_Inventory.insert({12224, 0}); //Pod Captain 5 Pack
-		m_Inventory.insert({12225, 0}); //Pod Captain 6 Pack
-		m_Inventory.insert({12226, 0}); //Pod Captain 7 Pack
 		m_Inventory.insert({14571, 0}); //Red Scorpion
 		m_Inventory.insert({14194, 0}); //Brown Dog
 		m_Inventory.insert({14568, 0}); //Dark Gray Dog
@@ -233,6 +185,13 @@ VendorComponent::VendorComponent(Entity* parent) : Component(parent) {
 		m_Inventory.insert({14563, 0}); //Tan Cat
 		m_Inventory.insert({14564, 0}); //Orange Cat
 		m_Inventory.insert({14192, 0}); //White Cat
+		m_Inventory.insert({12220, 0}); //Pod Captain 1 Pack
+		m_Inventory.insert({12221, 0}); //Pod Captain 2 Pack
+		m_Inventory.insert({12222, 0}); //Pod Captain 3 Pack
+		m_Inventory.insert({12223, 0}); //Pod Captain 4 Pack
+		m_Inventory.insert({12224, 0}); //Pod Captain 5 Pack
+		m_Inventory.insert({12225, 0}); //Pod Captain 6 Pack
+		m_Inventory.insert({12226, 0}); //Pod Captain 7 Pack
 		m_Inventory.insert({15976, 0}); //Duck Car Pack
 		m_Inventory.insert({15980, 0}); //Dune Buggy Pack
 		m_Inventory.insert({14744, 0}); //Racemaster Car
@@ -272,7 +231,7 @@ VendorComponent::VendorComponent(Entity* parent) : Component(parent) {
 		m_Inventory.insert({16679, 0}); //Ninjago Fire Car
 	}
 
-	//CALDERA MAR NPC - Moonbeam (Ninjago Monastery)(Glow Bug)
+	//CALDERA MAR NPC - Moonbeam (Ninjago Monastery)
 	if (parent->GetLOT() == 1904 && Game::server->GetZoneID() == 2000) {
 		m_Inventory.clear();
 	}

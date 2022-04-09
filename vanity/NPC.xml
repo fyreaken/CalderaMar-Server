@@ -61,27 +61,7 @@
             </locations>
         </zone>
     </npc>
-        <npc name="Platinum - Lightbringer" lot="1867">
-        <equipment>6198, 4343, 8539, 14092, 13584</equipment>
-        <phrases>
-        </phrases>
-        <zone id="1200">
-            <locations>
-                <location x="-353.19757" y="287.65414" z="216.34798" rw="0.106542826" rx="0" ry="0.9943081" rz="0" />
-            </locations>
-        </zone>
-    </npc>
-        <npc name="Platinum - Lightbringer" lot="1867">
-        <equipment>6198, 4343, 8539, 14092, 13584</equipment>
-        <phrases>
-        </phrases>
-        <zone id="1000">
-            <locations>
-            	<location x="-131.63197" y="580.9612" z="31.013863" rw="0.55181724" rx="0" ry="-0.83396506" rz="0" />
-            </locations>
-        </zone>
-    </npc>
-        <npc name="Nat - Spinjitzu Student" lot="13799">
+        <npc name="Izumi - Spinjitzu Student" lot="13799">
         <equipment>15936, 16067, 16102</equipment>
         <phrases>
         </phrases>
@@ -108,6 +88,17 @@
         <zone id="2000">
             <locations>
                 <location x="-473.801" y="171.161" z="1082.166" rw="0" rx="0" ry="0" rz="0" />
+            </locations>
+        </zone>
+    </npc>
+    <npc name="" lot="16935">
+        <equipment></equipment>
+        <phrases>
+            <phrase>Want to buy some totally legit gear? Nothing stolen!</phrase>
+        </phrases>
+        <zone id="1200">
+            <locations>
+                <location x="202.920" y="259.131" z="-550.985" rw="0.659191" rx="0" ry="0.751976" rz="0" />
             </locations>
         </zone>
     </npc>

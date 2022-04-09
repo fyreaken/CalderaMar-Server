@@ -3238,11 +3238,11 @@ void GameMessages::HandleClientTradeRequest(RakNet::BitStream* inStream, Entity*
 
 void GameMessages::HandleClientTradeCancel(RakNet::BitStream* inStream, Entity* entity, const SystemAddress& sysAddr)
 {
-	Game::logger->Log("GameMessages", "Trade canceled from (%llu)\n", entity->GetObjectID());
-
 	auto* trade = TradingManager::Instance()->GetPlayerTrade(entity->GetObjectID());
 	
 	if (trade == nullptr) return;
+
+	Game::logger->Log("GameMessages", "Trade canceled from (%llu)\n", entity->GetObjectID());
 
 	TradingManager::Instance()->CancelTrade(trade->GetTradeId());
 }
@@ -4137,6 +4137,41 @@ void GameMessages::HandleRacingPlayerInfoResetFinished(RakNet::BitStream* inStre
 	}
 }
 
+void GameMessages::SendUpdateReputation(const LWOOBJID objectId, const int64_t reputation, const SystemAddress& sysAddr) {
+	CBITSTREAM;
+	CMSGHEADER;
+
+	bitStream.Write(objectId);
+	bitStream.Write(GAME_MSG::GAME_MSG_UPDATE_REPUTATION);
+
+	bitStream.Write(reputation);
+
+	SEND_PACKET;
+}
+
+void GameMessages::HandleUpdatePropertyPerformanceCost(RakNet::BitStream* inStream, Entity* entity, const SystemAddress& sysAddr) {
+	float performanceCost = 0.0f;
+
+	if (inStream->ReadBit()) inStream->Read(performanceCost);
+
+	if (performanceCost == 0.0f) return;
+
+	auto zone = dZoneManager::Instance()->GetZone();
+	const auto& worldId = zone->GetZoneID();
+	const auto cloneId = worldId.GetCloneID();
+	const auto zoneId = worldId.GetMapID();
+
+	auto updatePerformanceCostQuery = Database::CreatePreppedStmt("UPDATE properties SET performance_cost = ? WHERE clone_id = ? AND zone_id = ?");
+
+	updatePerformanceCostQuery->setDouble(1, performanceCost);
+	updatePerformanceCostQuery->setInt(2, cloneId);
+	updatePerformanceCostQuery->setInt(3, zoneId);
+
+	updatePerformanceCostQuery->executeUpdate();
+
+	delete updatePerformanceCostQuery;
+	updatePerformanceCostQuery = nullptr;
+}
 
 void GameMessages::HandleVehicleNotifyHitImaginationServer(RakNet::BitStream* inStream, Entity* entity, const SystemAddress& sysAddr) 
 {
@@ -5890,6 +5925,7 @@ void GameMessages::HandleReportBug(RakNet::BitStream* inStream, Entity* entity) 
 	std::string nOtherPlayerID;
 	std::string selection;
 	uint32_t messageLength;
+	int32_t reporterID = 0;
 
 	//Reading:
 	inStream->Read(messageLength);
@@ -5899,6 +5935,9 @@ void GameMessages::HandleReportBug(RakNet::BitStream* inStream, Entity* entity) 
 		inStream->Read(character);
 		body.push_back(character);
 	}
+
+	auto character = entity->GetCharacter();
+	if (character) reporterID = character->GetID();
 
 	uint32_t clientVersionLength;
 	inStream->Read(clientVersionLength);
@@ -5915,6 +5954,9 @@ void GameMessages::HandleReportBug(RakNet::BitStream* inStream, Entity* entity) 
 		inStream->Read(character);
 		nOtherPlayerID.push_back(character);
 	}
+	// Convert other player id from LWOOBJID to the database id.
+	uint32_t otherPlayer = LWOOBJID_EMPTY;
+	if (nOtherPlayerID != "") otherPlayer = std::atoi(nOtherPlayerID.c_str());
 
 	uint32_t selectionLength;
 	inStream->Read(selectionLength);
@@ -5925,16 +5967,17 @@ void GameMessages::HandleReportBug(RakNet::BitStream* inStream, Entity* entity) 
 	}
 
 	try {
-		sql::PreparedStatement* insertBug = Database::CreatePreppedStmt("INSERT INTO `bug_reports`(body, client_version, other_player_id, selection) VALUES (?, ?, ?, ?)");
+		sql::PreparedStatement* insertBug = Database::CreatePreppedStmt("INSERT INTO `bug_reports`(body, client_version, other_player_id, selection, reporter_id) VALUES (?, ?, ?, ?, ?)");
 		insertBug->setString(1, GeneralUtils::UTF16ToWTF8(body));
 		insertBug->setString(2, clientVersion);
-		insertBug->setString(3, nOtherPlayerID);
+		insertBug->setString(3, std::to_string(otherPlayer));
 		insertBug->setString(4, selection);
+		insertBug->setInt(5, reporterID);
 		insertBug->execute();
 		delete insertBug;
 	}
 	catch (sql::SQLException& e) {
-		Game::logger->Log("HandleReportBug", "Couldn't save bug report!\n");
+		Game::logger->Log("HandleReportBug", "Couldn't save bug report! (%s)\n", e.what());
 	}
 }
 

@@ -1,15 +1,26 @@
 # Caldera Mar
 Modified Lego Universe servers using DLU.
 
-Mods the Caldera Mar servers use:
+Modified code on this fork adds the following functionality:
 
-- Account Manager with Name Approval.
-- Frostburgh without any questing content.
-- Frostburgh Racetrack.
 - Frostburgh Launcher using the Starbase 3001 interface.
 - Disabled Chat Filter.
-- Disabled Item Linking.
 - NPC Vendors selling unreleased items.
+- Ability for gmlevel 0 to use /playanim.
+
+Caldera Mar uses this fork for its Lego Universe Server.
+
+The modifications above are only applied to the server and do not require a user install a patch to their client.
+
+The Caldera Mar LU server also uses these mods:
+
+- Account Manager with Name Approval (server only).
+- Frostburgh without any questing content.
+- Frostburgh Racetrack.
+- Disabled Item Linking.
+- New items and crux drops.
 - Modified locale.xml.
+
+The modifications listed here are introduced by a patch on both client and server.
 
 Look to [Darkflame Universe](https://github.com/DarkflameUniverse/DarkflameServer) for installation instructions, and for setting up the server on Google Cloud: [guide](https://github.com/MasterEric/awesome-lego-universe/blob/master/server-setup/google-cloud-setup.md)

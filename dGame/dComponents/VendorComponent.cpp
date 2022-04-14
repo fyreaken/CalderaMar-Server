@@ -88,7 +88,7 @@ VendorComponent::VendorComponent(Entity* parent) : Component(parent) {
 		m_Inventory.insert({6407, 0}); //Hat of Pwnage
 	}
 
-	//CALDERA MAR NPC - Izumi (Ninjago Monastery Caves)()
+	//CALDERA MAR NPC - Izumi Moonstone (Ninjago Monastery Caves)
 	if (parent->GetLOT() == 13799 && Game::server->GetZoneID() == 2000) {
 		m_Inventory.clear();
 		m_Inventory.insert({14140, 0}); //Earth Armor Helmet

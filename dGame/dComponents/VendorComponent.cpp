@@ -108,6 +108,38 @@ VendorComponent::VendorComponent(Entity* parent) : Component(parent) {
 		m_Inventory.insert({16125, 0}); //Black Hakama Pants
 		m_Inventory.insert({14721, 0}); //Nya's Golden Daggers
 		m_Inventory.insert({14824, 0}); //Double Hammers
+		m_Inventory.insert({16700, 0}); //Earth Ninjago Rocket Part 1
+		m_Inventory.insert({16701, 0}); //Earth Ninjago Rocket Part 2
+		m_Inventory.insert({16702, 0}); //Earth Ninjago Rocket Part 3
+		m_Inventory.insert({16697, 0}); //Ice Ninjago Rocket Part 1
+		m_Inventory.insert({16698, 0}); //Ice Ninjago Rocket Part 2
+		m_Inventory.insert({16699, 0}); //Ice Ninjago Rocket Part 3
+		m_Inventory.insert({16703, 0}); //Fire Ninjago Rocket Part 1
+		m_Inventory.insert({16704, 0}); //Fire Ninjago Rocket Part 2
+		m_Inventory.insert({16705, 0}); //Fire Ninjago Rocket Part 3
+		m_Inventory.insert({16706, 0}); //Lightning Ninjago Rocket Part 1
+		m_Inventory.insert({16707, 0}); //Lightning Ninjago Rocket Part 2
+		m_Inventory.insert({16708, 0}); //Lightning Ninjago Rocket Part 3
+		m_Inventory.insert({16658, 0}); //Ninjago Earth Car
+		m_Inventory.insert({16659, 0}); //Ninjago Earth Car
+		m_Inventory.insert({16660, 0}); //Ninjago Earth Car
+		m_Inventory.insert({16661, 0}); //Ninjago Earth Car
+		m_Inventory.insert({16662, 0}); //Ninjago Earth Car
+		m_Inventory.insert({16665, 0}); //Ninjago Lightning Car
+		m_Inventory.insert({16666, 0}); //Ninjago Lightning Car
+		m_Inventory.insert({16667, 0}); //Ninjago Lightning Car
+		m_Inventory.insert({16668, 0}); //Ninjago Lightning Car
+		m_Inventory.insert({16669, 0}); //Ninjago Lightning Car
+		m_Inventory.insert({16670, 0}); //Ninjago Ice Car
+		m_Inventory.insert({16671, 0}); //Ninjago Ice Car
+		m_Inventory.insert({16672, 0}); //Ninjago Ice Car
+		m_Inventory.insert({16673, 0}); //Ninjago Ice Car
+		m_Inventory.insert({16674, 0}); //Ninjago Ice Car
+		m_Inventory.insert({16675, 0}); //Ninjago Fire Car
+		m_Inventory.insert({16676, 0}); //Ninjago Fire Car
+		m_Inventory.insert({16677, 0}); //Ninjago Fire Car
+		m_Inventory.insert({16678, 0}); //Ninjago Fire Car
+		m_Inventory.insert({16679, 0}); //Ninjago Fire Car
 	}
 
 	//CALDERA MAR NPC - Del (Nexus Tower)
@@ -129,7 +161,6 @@ VendorComponent::VendorComponent(Entity* parent) : Component(parent) {
 		m_Inventory.insert({14119, 0}); //Nexus Force Shield MKIII
 		m_Inventory.insert({14802, 0}); //Wolf Head
 		m_Inventory.insert({13740, 0}); //Stromling Disguise
-		m_Inventory.insert({13741, 0}); //Dragon Disguise
 		m_Inventory.insert({13742, 0}); //Ronin Disguise
 		m_Inventory.insert({9869, 0}); //Vampire Nexus Force Cape
 		m_Inventory.insert({9870, 0}); //Vampire Blue Cape
@@ -151,21 +182,9 @@ VendorComponent::VendorComponent(Entity* parent) : Component(parent) {
 		m_Inventory.insert({15979, 0}); //Duck Rocket
 		m_Inventory.insert({15978, 0}); //Pencil Rocket
 		m_Inventory.insert({15977, 0}); //Shark Rocket
-		m_Inventory.insert({16700, 0}); //Earth Ninjago Rocket Part 1
-		m_Inventory.insert({16701, 0}); //Earth Ninjago Rocket Part 2
-		m_Inventory.insert({16702, 0}); //Earth Ninjago Rocket Part 3
-		m_Inventory.insert({16697, 0}); //Ice Ninjago Rocket Part 1
-		m_Inventory.insert({16698, 0}); //Ice Ninjago Rocket Part 2
-		m_Inventory.insert({16699, 0}); //Ice Ninjago Rocket Part 3
-		m_Inventory.insert({16703, 0}); //Fire Ninjago Rocket Part 1
-		m_Inventory.insert({16704, 0}); //Fire Ninjago Rocket Part 2
-		m_Inventory.insert({16705, 0}); //Fire Ninjago Rocket Part 3
-		m_Inventory.insert({16706, 0}); //Lightning Ninjago Rocket Part 1
-		m_Inventory.insert({16707, 0}); //Lightning Ninjago Rocket Part 2
-		m_Inventory.insert({16708, 0}); //Lightning Ninjago Rocket Part 3
 	}
 
-	//CALDERA MAR NPC - Valve (Nexus Tower)
+	//CALDERA MAR NPC - Jesse Studd (Nexus Tower)
 	if (parent->GetLOT() == 3921 && Game::server->GetZoneID() == 1900) {
 		m_Inventory.clear();
 		m_Inventory.insert({14571, 0}); //Red Scorpion
@@ -209,26 +228,6 @@ VendorComponent::VendorComponent(Entity* parent) : Component(parent) {
 		m_Inventory.insert({14756, 0}); //Master Driver Car
 		m_Inventory.insert({14757, 0}); //Master Driver Car
 		m_Inventory.insert({14758, 0}); //Master Driver Car
-		m_Inventory.insert({16658, 0}); //Ninjago Earth Car
-		m_Inventory.insert({16659, 0}); //Ninjago Earth Car
-		m_Inventory.insert({16660, 0}); //Ninjago Earth Car
-		m_Inventory.insert({16661, 0}); //Ninjago Earth Car
-		m_Inventory.insert({16662, 0}); //Ninjago Earth Car
-		m_Inventory.insert({16665, 0}); //Ninjago Lightning Car
-		m_Inventory.insert({16666, 0}); //Ninjago Lightning Car
-		m_Inventory.insert({16667, 0}); //Ninjago Lightning Car
-		m_Inventory.insert({16668, 0}); //Ninjago Lightning Car
-		m_Inventory.insert({16669, 0}); //Ninjago Lightning Car
-		m_Inventory.insert({16670, 0}); //Ninjago Ice Car
-		m_Inventory.insert({16671, 0}); //Ninjago Ice Car
-		m_Inventory.insert({16672, 0}); //Ninjago Ice Car
-		m_Inventory.insert({16673, 0}); //Ninjago Ice Car
-		m_Inventory.insert({16674, 0}); //Ninjago Ice Car
-		m_Inventory.insert({16675, 0}); //Ninjago Fire Car
-		m_Inventory.insert({16676, 0}); //Ninjago Fire Car
-		m_Inventory.insert({16677, 0}); //Ninjago Fire Car
-		m_Inventory.insert({16678, 0}); //Ninjago Fire Car
-		m_Inventory.insert({16679, 0}); //Ninjago Fire Car
 	}
 
 	//CALDERA MAR NPC - Moonbeam (Ninjago Monastery)

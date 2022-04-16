@@ -774,7 +774,7 @@ void SlashCommandHandler::HandleChatCommand(const std::u16string& command, Entit
 		ChatPackets::SendSystemMessage(sysAddr, u"Sent universe shutdown notification to master.");
 
 		//Tell chat to send an announcement to all servers
-		SendAnnouncement("Servers Closing Soon!", "DLU servers will close for maintenance in 10 minutes from now.");
+		SendAnnouncement("Server Closing Soon!", "Caldera Mar will close for maintenance in 10 minutes from now.");
 		return;
 	}
 

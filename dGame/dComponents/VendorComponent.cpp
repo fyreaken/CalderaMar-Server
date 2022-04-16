@@ -108,6 +108,8 @@ VendorComponent::VendorComponent(Entity* parent) : Component(parent) {
 		m_Inventory.insert({16125, 0}); //Black Hakama Pants
 		m_Inventory.insert({14721, 0}); //Nya's Golden Daggers
 		m_Inventory.insert({14824, 0}); //Double Hammers
+		m_Inventory.insert({15918, 0}); //Athlete's Shade
+		m_Inventory.insert({16123, 0}); //Murasaki Hakama
 		m_Inventory.insert({16700, 0}); //Earth Ninjago Rocket Part 1
 		m_Inventory.insert({16701, 0}); //Earth Ninjago Rocket Part 2
 		m_Inventory.insert({16702, 0}); //Earth Ninjago Rocket Part 3
@@ -177,8 +179,6 @@ VendorComponent::VendorComponent(Entity* parent) : Component(parent) {
 		m_Inventory.insert({14103, 0}); //Paparazzi Shirt
 		m_Inventory.insert({14102, 0}); //Photojournalist Shirt
 		m_Inventory.insert({14101, 0}); //Bricksel Adams Shirt
-		m_Inventory.insert({15918, 0}); //Athlete's Shade
-		m_Inventory.insert({16123, 0}); //Murasaki Hakama
 		m_Inventory.insert({15979, 0}); //Duck Rocket
 		m_Inventory.insert({15978, 0}); //Pencil Rocket
 		m_Inventory.insert({15977, 0}); //Shark Rocket

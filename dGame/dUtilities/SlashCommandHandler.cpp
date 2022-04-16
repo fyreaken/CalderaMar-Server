@@ -451,7 +451,6 @@ void SlashCommandHandler::HandleChatCommand(const std::u16string& command, Entit
 		std::u16string anim = GeneralUtils::ASCIIToUTF16(args[0], args[0].size());
 		GameMessages::SendPlayAnimation(entity, anim);
 	}
->>>>>>> 8f50e4ff56b71ff0c58a34f5d4029731f16e33c6
 
 	if (chatCommand == "list-spawns" && entity->GetGMLevel() >= GAME_MASTER_LEVEL_DEVELOPER) {
 		for (const auto& pair : EntityManager::Instance()->GetSpawnPointEntities()) {

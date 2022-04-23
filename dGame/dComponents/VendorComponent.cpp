@@ -176,12 +176,9 @@ VendorComponent::VendorComponent(Entity* parent) : Component(parent) {
 		m_Inventory.insert({14120, 0}); //Nexus Force Shield MKII
 		m_Inventory.insert({14121, 0}); //Nexus Force Shield MKI
 		m_Inventory.insert({14802, 0}); //Wolf Head
-		m_Inventory.insert({15966, 0}); //Maelstrom Spear
-		m_Inventory.insert({15968, 0}); //Maelstrom Dagger
 		m_Inventory.insert({15977, 0}); //Shark Rocket
 		m_Inventory.insert({15978, 0}); //Pencil Rocket
 		m_Inventory.insert({15979, 0}); //Duck Rocket
-		m_Inventory.insert({15987, 0}); //Maelstrom Axe
 	}
 
 	//CALDERA MAR NPC - Jesse Studd (Nexus Tower)

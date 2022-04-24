@@ -1,0 +1,26 @@
+-0-0-0-0-0-0- NPC.xml -0-0-0-0-0-0-
+
+        <npc name="Caldera Mar Test NPC - test test test test" lot="3921">
+        <equipment>14104, 2524</equipment>
+        <phrases>
+            <phrase>cmerw[acowipaejio;fawjioefasdl;kfjm;</phrase>
+        </phrases>
+        <zone id="1100">
+            <locations>
+                <location x="-254.83481" y="352.01108" z="-134.28882" rw="-0.36822134" rx="0" ry="0.92973816" rz="0" />
+            </locations>
+        </zone>
+    </npc>
+
+-0-0-0-0-0-0- VendorComponent.cpp -0-0-0-0-0-0-
+
+	//CALDERA MAR NPC - testnpc
+	if (parent->GetLOT() == 3921 && Game::server->GetZoneID() == 1100) {
+		m_Inventory.clear();
+		m_Inventory.insert({1727, 0}); //Jetpack
+		m_Inventory.insert({2243, 0}); //Uber Hammer
+		m_Inventory.insert({3293, 0}); //Flamethrower
+		m_Inventory.insert({3735, 0}); //Large Jetpack
+		m_Inventory.insert({5873, 0}); //Winged Helm of Speed
+		m_Inventory.insert({6407, 0}); //Hat of Pwnage
+	}

@@ -77,17 +77,6 @@ VendorComponent::VendorComponent(Entity* parent) : Component(parent) {
 		m_Inventory.clear();
 	}
 
-	//CALDERA MAR NPC - testnpc
-	if (parent->GetLOT() == 3921 && Game::server->GetZoneID() == 1100) {
-		m_Inventory.clear();
-		m_Inventory.insert({1727, 0}); //Jetpack
-		m_Inventory.insert({2243, 0}); //Uber Hammer
-		m_Inventory.insert({3293, 0}); //Flamethrower
-		m_Inventory.insert({3735, 0}); //Large Jetpack
-		m_Inventory.insert({5873, 0}); //Winged Helm of Speed
-		m_Inventory.insert({6407, 0}); //Hat of Pwnage
-	}
-
 	//CALDERA MAR NPC - Izumi Moonstone (Ninjago Monastery Caves)
 	if (parent->GetLOT() == 13799 && Game::server->GetZoneID() == 2000) {
 		m_Inventory.clear();

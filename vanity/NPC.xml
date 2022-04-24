@@ -20,17 +20,6 @@
             </locations>
         </zone>
     </npc>
-        <npc name="Caldera Mar Test NPC - test test test test" lot="3921">
-        <equipment>14104, 2524</equipment>
-        <phrases>
-            <phrase>cmerw[acowipaejio;fawjioefasdl;kfjm;</phrase>
-        </phrases>
-        <zone id="1100">
-            <locations>
-                <location x="-254.83481" y="352.01108" z="-134.28882" rw="-0.36822134" rx="0" ry="0.92973816" rz="0" />
-            </locations>
-        </zone>
-    </npc>
         <npc name="Wrynn - The Accursed" lot="4712">
         <equipment></equipment>
         <phrases>

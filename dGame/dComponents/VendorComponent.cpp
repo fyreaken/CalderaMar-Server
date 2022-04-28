@@ -119,21 +119,17 @@ void VendorComponent::RefreshInventory(bool isCreation) {
 
 	//CALDERA MAR NPC - Wrynn - The Accursed (Venture Explorer)(Normal Stromling)
 	if (m_Parent->GetLOT() == 4712 && Game::server->GetZoneID() == 1000) {
-		if (!isCreation) return;
-	}
-	m_Inventory.clear();
+		m_Inventory.clear();
 	}
 
 	//CALDERA MAR NPC - Wrynn - The Accursed (Nimbus Station)(Stromling Invader)
 	if (m_Parent->GetLOT() == 4712 && Game::server->GetZoneID() == 1200) {
-		if (!isCreation) return;
-	}
-	m_Inventory.clear();
+		m_Inventory.clear();
 	}
 
 	//CALDERA MAR NPC - Izumi Moonstone (Ninjago Monastery Caves)
 	if (m_Parent->GetLOT() == 13799 && Game::server->GetZoneID() == 2000) {
-		if (!isCreation) return;
+		m_Inventory.clear();
 		m_Inventory.insert({14090, 0}); //Earth Armor Weapon
 		m_Inventory.insert({14135, 0}); //Earth Armor Shoulderpads
 		m_Inventory.insert({14140, 0}); //Earth Armor Helmet
@@ -186,12 +182,10 @@ void VendorComponent::RefreshInventory(bool isCreation) {
 		m_Inventory.insert({16707, 0}); //Lightning Ninjago Rocket Part 2
 		m_Inventory.insert({16708, 0}); //Lightning Ninjago Rocket Part 3
 	}
-	m_Inventory.clear();
-	}
 
 	//CALDERA MAR NPC - Del (Nexus Tower)
 	if (m_Parent->GetLOT() == 1867 && Game::server->GetZoneID() == 1900) {
-		if (!isCreation) return;
+		m_Inventory.clear();
 		m_Inventory.insert({7791, 0}); //Blue Sun Headdress
 		m_Inventory.insert({9869, 0}); //Vampire Nexus Force Cape
 		m_Inventory.insert({9870, 0}); //Vampire Blue Cape
@@ -225,12 +219,10 @@ void VendorComponent::RefreshInventory(bool isCreation) {
 		m_Inventory.insert({15978, 0}); //Pencil Rocket
 		m_Inventory.insert({15979, 0}); //Duck Rocket
 	}
-	m_Inventory.clear();
-	}
 
 	//CALDERA MAR NPC - Jesse Studd (Nexus Tower)
 	if (m_Parent->GetLOT() == 3921 && Game::server->GetZoneID() == 1900) {
-		if (!isCreation) return;
+		m_Inventory.clear();
 		m_Inventory.insert({12220, 0}); //Pod Captain 1 Pack
 		m_Inventory.insert({12221, 0}); //Pod Captain 2 Pack
 		m_Inventory.insert({12222, 0}); //Pod Captain 3 Pack
@@ -273,14 +265,10 @@ void VendorComponent::RefreshInventory(bool isCreation) {
 		m_Inventory.insert({15976, 0}); //Duck Car Pack
 		m_Inventory.insert({15980, 0}); //Dune Buggy Pack
 	}
-	m_Inventory.clear();
-	}
 
 	//CALDERA MAR NPC - Moonbeam (Ninjago Monastery)
-	if (parent->GetLOT() == 1904 && Game::server->GetZoneID() == 2000) {
-		if (!isCreation) return;
-	}
-	m_Inventory.clear();
+	if (m_Parent->GetLOT() == 1904 && Game::server->GetZoneID() == 2000) {
+		m_Inventory.clear();
 	}
 }
 

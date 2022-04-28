@@ -122,7 +122,7 @@ void VendorComponent::RefreshInventory(bool isCreation) {
 		m_Inventory.clear();
 	}
 
-	//CALDERA MAR NPC - Wrynn - The Accursed (Nimbus Station)(Stromling Invader)
+	//CALDERA MAR NPC - Wrynn - The Accursed (Nimbus Station)(Normal Stromling)
 	if (m_Parent->GetLOT() == 4712 && Game::server->GetZoneID() == 1200) {
 		m_Inventory.clear();
 	}

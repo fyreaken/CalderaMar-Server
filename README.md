@@ -13,7 +13,7 @@ The modifications above are only applied to the server and do not require a user
 
 The Caldera Mar LU server also uses these mods:
 
-- NexusDashboard.
+- [NexusDashboard.](https://github.com/DarkflameUniverse/NexusDashboard)
 - Frostburgh with restored questing content.
 - Frostburgh Racing.
 - Disabled Item Linking.

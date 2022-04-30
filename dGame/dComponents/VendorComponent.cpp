@@ -114,7 +114,6 @@ void VendorComponent::RefreshInventory(bool isCreation) {
 	m_Parent->AddCallbackTimer(m_RefreshTimeSeconds, [this]() {
 		RefreshInventory();
 	});
-	GameMessages::SendVendorStatusUpdate(m_Parent, UNASSIGNED_SYSTEM_ADDRESS);
 
 
 	//CALDERA MAR NPC - Wrynn - The Accursed (Venture Explorer)(Normal Stromling)
@@ -270,6 +269,7 @@ void VendorComponent::RefreshInventory(bool isCreation) {
 	if (m_Parent->GetLOT() == 1904 && Game::server->GetZoneID() == 2000) {
 		m_Inventory.clear();
 	}
+	GameMessages::SendVendorStatusUpdate(m_Parent, UNASSIGNED_SYSTEM_ADDRESS);
 }
 
 void VendorComponent::SetupConstants() {

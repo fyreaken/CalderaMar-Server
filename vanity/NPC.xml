@@ -92,13 +92,13 @@
         </zone>
     </npc>
     <npc name="" lot="16940">
-        <equipment>7793, 12710, 8667</equipment>
+        <equipment>7793, 12710, 8648</equipment>
         <phrases>
             <phrase>I'll pay big money for grey kepi hats!</phrase>
         </phrases>
         <zone id="1400">
             <locations>
-                <location x="-543.630" y="-39.222" z="-522.341" rw="0.659191" rx="0" ry="0.751976" rz="0" />
+                <location x="-543.609802" y="-39.234043" z="-522.363220" rw="0.869164" rx="0" ry="-0.494523" rz="0" />
             </locations>
         </zone>
     </npc>

@@ -92,7 +92,7 @@
         </zone>
     </npc>
     <npc name="" lot="16940">
-        <equipment></equipment>
+        <equipment>7793, 12710, 8667</equipment>
         <phrases>
             <phrase>I'll pay big money for grey kepi hats!</phrase>
         </phrases>

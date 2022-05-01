@@ -98,7 +98,7 @@
         </phrases>
         <zone id="1400">
             <locations>
-                <location x="-543.630" y="-39.222" z="-522.341" rw="0.659191" rx="0" ry="0.751976" rz="0" />
+                <location x="-543.630" y="-39.222" z="-522.341" rw="0.659191" rx="0" ry="-0.6475218" rz="0" />
             </locations>
         </zone>
     </npc>

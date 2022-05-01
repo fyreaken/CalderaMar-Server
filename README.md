@@ -3,7 +3,6 @@ Modified Lego Universe servers using DLU.
 
 Modified code on this fork adds the following functionality:
 
-- Frostburgh Launcher using the Starbase 3001 interface.
 - Disabled Chat Filter.
 - NPC Vendors selling unreleased items.
 - Ability for gmlevel 0 to use /playanim.
@@ -14,10 +13,10 @@ The modifications above are only applied to the server and do not require a user
 
 The Caldera Mar LU server also uses these mods:
 
-- Account Manager with Name Approval (server only).
-- Frostburgh without any questing content.
-- Frostburgh Racetrack.
-- Disabled Item Linking.
+- [NexusDashboard.](https://github.com/DarkflameUniverse/NexusDashboard)
+- Frostburgh with restored questing content.
+- Frostburgh Racing.
+- Disabled Item Linking/Binding.
 - New items and crux drops.
 - Modified locale.xml.
 

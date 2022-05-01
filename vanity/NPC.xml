@@ -50,7 +50,7 @@
             </locations>
         </zone>
     </npc>
-        <npc name="Izumi Moonstone - Spinjitzu Student" lot="13799">
+        <npc name="Izumi Moonstone - Spinjitzu Student" lot="1867">
         <equipment>15936, 16067, 16102</equipment>
         <phrases>
         </phrases>

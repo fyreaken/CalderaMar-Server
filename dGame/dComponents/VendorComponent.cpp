@@ -127,7 +127,7 @@ void VendorComponent::RefreshInventory(bool isCreation) {
 	}
 
 	//CALDERA MAR NPC - Izumi Moonstone (Ninjago Monastery Caves)
-	if (m_Parent->GetLOT() == 13799 && Game::server->GetZoneID() == 2000) {
+	if (m_Parent->GetLOT() == 1867 && Game::server->GetZoneID() == 2000) {
 		m_Inventory.clear();
 		m_Inventory.insert({14090, 0}); //Earth Armor Weapon
 		m_Inventory.insert({14135, 0}); //Earth Armor Shoulderpads

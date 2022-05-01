@@ -91,6 +91,17 @@
             </locations>
         </zone>
     </npc>
+    <npc name="" lot="16940">
+        <equipment></equipment>
+        <phrases>
+            <phrase>I'll pay big money for grey kepi hats!</phrase>
+        </phrases>
+        <zone id="1400">
+            <locations>
+                <location x="-543.630" y="-39.222" z="-522.341" rw="0.659191" rx="0" ry="0.751976" rz="0" />
+            </locations>
+        </zone>
+    </npc>
     <party zone="1200" chance="0.0">
         <locations>
             <location x="-24.3963" y="291.542" z="-117.871" rw="0.480946" rx="0" ry="0.87675" rz="0" />

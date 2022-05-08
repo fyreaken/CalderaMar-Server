@@ -20,7 +20,7 @@
             </locations>
         </zone>
     </npc>
-        <npc name="Wrynn - The Accursed" lot="4712">
+        <npc name="Wrynn - The Accursed" lot="13306">
         <equipment></equipment>
         <phrases>
         </phrases>
@@ -30,7 +30,7 @@
             </locations>
         </zone>
     </npc>
-        <npc name="Wrynn - The Accursed" lot="4712">
+        <npc name="Wrynn - The Accursed" lot="13306">
         <equipment></equipment>
         <phrases>
         </phrases>

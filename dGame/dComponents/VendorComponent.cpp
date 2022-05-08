@@ -213,7 +213,7 @@ void VendorComponent::RefreshInventory(bool isCreation) {
 		m_Inventory.insert({14119, 0}); //Nexus Force Shield MKIII
 		m_Inventory.insert({14120, 0}); //Nexus Force Shield MKII
 		m_Inventory.insert({14121, 0}); //Nexus Force Shield MKI
-		m_Inventory.insert({14802, 0}); //Wolf Head
+		m_Inventory.insert({14802, 0}); //Brown Wolf Head Helmet
 		m_Inventory.insert({15977, 0}); //Shark Rocket
 		m_Inventory.insert({15978, 0}); //Pencil Rocket
 		m_Inventory.insert({15979, 0}); //Duck Rocket
@@ -267,6 +267,11 @@ void VendorComponent::RefreshInventory(bool isCreation) {
 
 	//CALDERA MAR NPC - Moonbeam (Ninjago Monastery)
 	if (m_Parent->GetLOT() == 1904 && Game::server->GetZoneID() == 2000) {
+		m_Inventory.clear();
+	}
+
+	//CALDERA MAR NPC - Logan Moonshot (Nexus Tower)
+	if (m_Parent->GetLOT() == 9706 && Game::server->GetZoneID() == 1900) {
 		m_Inventory.clear();
 	}
 	GameMessages::SendVendorStatusUpdate(m_Parent, UNASSIGNED_SYSTEM_ADDRESS);

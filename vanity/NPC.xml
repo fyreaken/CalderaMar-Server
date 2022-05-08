@@ -102,6 +102,17 @@
             </locations>
         </zone>
     </npc>
+        <npc name="Logan Moonshot - Book Smuggler" lot="9706">
+        <equipment>9945, 9948, 7636</equipment>
+        <phrases>
+	<phrase>Ready to Explore? Come get your gear!</phrase>
+        </phrases>
+        <zone id="1900">
+            <locations>
+                <location x="-265.357849" y="1171.118408" z="-42.646435" rw="0.929283" rx="0" ry="-0.369369" rz="0" />
+            </locations>
+        </zone>
+    </npc>
     <party zone="1200" chance="0.0">
         <locations>
             <location x="-24.3963" y="291.542" z="-117.871" rw="0.480946" rx="0" ry="0.87675" rz="0" />

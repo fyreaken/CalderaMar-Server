@@ -270,7 +270,7 @@ void VendorComponent::RefreshInventory(bool isCreation) {
 		m_Inventory.clear();
 	}
 
-	//CALDERA MAR NPC - Logan Moonshot (Nexus Tower)
+	//CALDERA MAR NPC - Silas Penumbra (Nexus Tower)
 	if (m_Parent->GetLOT() == 9706 && Game::server->GetZoneID() == 1900) {
 		m_Inventory.clear();
 	}

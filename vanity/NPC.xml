@@ -102,8 +102,8 @@
             </locations>
         </zone>
     </npc>
-        <npc name="Logan Moonshot - Book Smuggler" lot="9706">
-        <equipment>9945, 9948, 7636</equipment>
+        <npc name="Silas Penumbra - Book Smuggler" lot="9706">
+        <equipment>12606, 12607, 12915</equipment>
         <phrases>
 	<phrase>Ready to Explore? Come get your gear!</phrase>
         </phrases>
